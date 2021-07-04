@@ -4,7 +4,67 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+.flex-container{
+    display: flex;
+}
+.flex-65{
+    width: 65%;
+}
+.flex-35{
+    width: 35%;
+}
+.flex-half{
+    width: 50%;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 20px;
+}
+.link-button{
+    text-decoration: none;
+    /* padding: 8px; */
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    color: #09f;
+    border: 1px solid gray;
+    border-radius: 5%;
+}
 /* ------------------header section---------------------- */
+.header{
+    /* margin: 0 10px; */
+}
+.header p{
+    display: inline-block;
+    margin-left: 30px;
+    /* border: 2px solid blue; */
+}
+.header .additional{
+    /* float: right; */
+    display: inline-block;
+    /* border: 2px solid red; */
+    margin-left: 250px;
+    /* padding: 10px;
+    float: right; */
+}
+.header .additional a{
+    display: block;
+    /* margin-bottom: 10px; */
+    padding: 5px;
+}
+.header .additional select{
+    padding: 8px;
+    border: none;
+    margin-top: 8px;
+}
 .header .header-image{
     /* margin: 0 auto; */
     /* border: 2px solid green; */
@@ -13,11 +73,13 @@ body{
 .header .header-image img{
     height: 70px;
     width: 500px;
-    margin-left: 400px;
+    margin-left: 250px;
 }
 .nav{
     /* border: 2px solid red; */
     box-shadow: 5px 5px 15px gray;
+    /* position: sticky;
+    top: 0; */
 }
 .nav ul{
     display: flex;
@@ -33,4 +95,45 @@ body{
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+.nav ul li a:hover{
+    color: blue;
+}
+/* -------------------content section------------------------ */
+.content{
+    margin: 100px 80px 50px 80px;
+}
+.main-body{
+    width: 80%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.first{
+    /* border: 2px solid red; */
+    width: 55%;
+    margin-right: 30px;
+    /* border-right: 2px solid gray; */
+
+}
+.first .para{
+    width: 50%;
+}
+.first .first-image{
+    width: 50%;
+    /* border: 2px solid blue; */
+}
+.first .first-image img{
+    height: 100%;
+    width: 100%;
+}
+.second{
+    border-left: 1px solid gray;
+    padding-left: 15px;
+    width: 40%;
+
+}
+.sidebar{
+    border-left: 1px solid gray;
+    padding-left: 15px;
+    width: 20%;
 }
